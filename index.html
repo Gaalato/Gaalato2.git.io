@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <title id="titulo">Places to visit</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="background-overlay">
+      <h1 id="title">Places to visit</h1>
+      <p id="description">A form about the good places to go!</p>
+      <form action="idk" method="post" id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">Name<input id="name" name="name" placeholder="Enter your name" required type="text"/></label>
+          <label id="email-label" for="email">Email<input id="email" name="email" placeholder="Enter your email" required type="email"/></label>
+          <label id="number-label" for="number">Age<input id="number" name="number" placeholder="Age" required min="13" max="120" type="number"/></label>
+          <label>Out of these three options wich seems more appealing?
+            <select required id="dropdown">
+              <option value="" disabled selected >Select the country you would visit</option>
+              <option value="1">France</option>
+              <option value="2">India</option>
+              <option value="3">Italy</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <label><input checked class="inline" value="eiffel" id="eiffel" name="radio" type="radio"/>Eiffel Tower</label>
+          <label><input class="inline" value="taj" id="taj" name="radio"type="radio"/>Taj Mahal</label>
+          <label><input class="inline" value="pisa" id="pisa" name="radio"type="radio"/>Leaning Tower of Pisa</label>
+          <legend>Out the these three places wich would you prefer to visit?</legend>
+        </fieldset>
+        <fieldset>
+          <legend>Things you take with you in your travels.</legend>
+          <label><input class="inline" checked name="checkbox-travel" value="bags-backpacks" type="checkbox"/>Bags and Backpacks</label>
+          <label><input class="inline" name="checkbox-travel" value="drinks-snacks" type="checkbox"/>Drinks and Snacks</label>
+          <label><input class="inline" name="checkbox-travel" value="cameras-smartphones" type="checkbox"/>Cameras and Smartphones</label>
+          <label><input class="inline" name="checkbox-travel" value="others" type="checkbox"/>Others</label>
+        </fieldset>
+        <label>Tell us what discourages you from traveling. <textarea rows="3" cols="10"></textarea></label>
+      <input id="submit" type="submit" value="Submit"/>
+      </form>
+    </div>  
+  </body>
+
+
+</html>
